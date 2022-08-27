@@ -7,16 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Shoprite
 {
     public partial class MainForm : Form
     {
+        SqlConnection cn = new SqlConnection();
+        SqlCommand cm = new SqlCommand();
+        DBConnect dbcon = new DBConnect();
         public MainForm()
         {
             InitializeComponent();
             customizeDesign();
+            cn = new SqlConnection(dbcon.myConnection());
+            cn.Open();
+            MessageBox.Show("Database is Connected");
         }
+
         #region panelSlide
         public void customizeDesign()
         {

@@ -478,8 +478,9 @@
             this.panelMain.Controls.Add(this.pictureBox2);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(200, 60);
+            this.panelMain.MinimumSize = new System.Drawing.Size(1200, 700);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(984, 601);
+            this.panelMain.Size = new System.Drawing.Size(1200, 700);
             this.panelMain.TabIndex = 2;
             // 
             // pictureBox2
