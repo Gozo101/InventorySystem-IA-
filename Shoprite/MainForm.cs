@@ -22,7 +22,7 @@ namespace Shoprite
             customizeDesign();
             cn = new SqlConnection(dbcon.myConnection());
             cn.Open();
-            MessageBox.Show("Database is Connected");
+            //MessageBox.Show("Database is Connected");
         }
 
         #region panelSlide
